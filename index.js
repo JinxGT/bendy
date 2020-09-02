@@ -41,8 +41,8 @@ bot.on('message', async message => {
 		.setColor('#383fff')
 		.setTitle('COMMANDS')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
-		.addField('', '``be!lol``', true)
-		.addField('', '``be!owo``', true)
+		.addField('lol', '``be!lol``', true)
+		.addField('owo', '``be!owo``', true)
 		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
 		.setTimestamp()
 		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
