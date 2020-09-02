@@ -29,8 +29,8 @@ Reflect.defineProperty(currency, 'getBalance', {
 
 bot.on('ready', () => {
 	const storedBalances = await Users.findAll();
-storedBalances.forEach(b => currency.set(b.user_id, b));
-    console.log(`Logged in as ${bot.user.tag} :)`);
+	storedBalances.forEach(b => currency.set(b.user_id, b));
+} console.log(`Logged in as ${bot.user.tag} :)`);
     bot.user.setActivity("Bendylovania", {
         type: "STREAMING",
         url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
