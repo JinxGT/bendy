@@ -28,7 +28,7 @@ bot.on('message', message => {
 bot.on('message', async message => {
 	if (message.content === "be!help" ) {
 	const exampleEmbed = new Discord.MessageEmbed()
-		.setColor('#ff00c3')
+		.setColor('#383fff')
 		.setTitle('COMMANDS')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
 		.setDescription('``This command is currently unavailable!``')
