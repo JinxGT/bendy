@@ -29,6 +29,10 @@ bot.on('message', message => {
 	}
 });
 
+// THIS IS THE (be!shop) COMMAND
+
+
+
 // THIS IS THE (be!help) COMMAND
 
 bot.on('message', async message => {
