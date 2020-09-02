@@ -6,8 +6,6 @@ const prefix = "be!"
 // THIS IS THE STATUS
 
 bot.on('ready', () => {
-	const Enmap = require("enmap");
-	bot.points = new Enmap({name: "points"});
     console.log(`Logged in as ${bot.user.tag} :)`);
     bot.user.setActivity("Bendylovania", {
         type: "STREAMING",
@@ -73,5 +71,11 @@ bot.on('message', async message => {
 	}	
 	
 })
+
+// THESE ARE CURRENCY COMMANDS
+
+
+
+// THIS IS THE TOKEN HOLDER
 
 bot.login(process.env.token);
