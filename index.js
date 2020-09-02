@@ -98,7 +98,7 @@ bot.on('message', async message => {
 
 // THESE ARE THE SHOP COMMANDS
 
-client.on('message', async message => {
+bot.on('message', async message => {
 	if (message.author.bot) return;
 	currency.add(message.author.id, 1);
 
