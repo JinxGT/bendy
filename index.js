@@ -18,13 +18,13 @@ bot.on('ready', () => {
 // THESE ARE MESSAGE REPLIES
 
 bot.on('message', message => {
-	if (message.content === 'owo') {
+	if (message.content === 'be!owo') {
 		message.channel.send('just why?');
 	}
 });
 
 bot.on('message', message => {
-	if (message.content === 'lol') {
+	if (message.content === 'be!lol') {
 		message.channel.send('Lots of Love to you to!');
 	}
 });
