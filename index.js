@@ -23,6 +23,12 @@ bot.on('message', message => {
 	}
 });
 
+bot.on('message', message => {
+	if (message.content === 'lol') {
+		message.channel.send('Lots of Love to you to!');
+	}
+});
+
 // THIS IS THE (be!help) COMMAND
 
 bot.on('message', async message => {
