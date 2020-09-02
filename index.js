@@ -29,6 +29,12 @@ bot.on('message', message => {
 	}
 });
 
+bot.on('message', message => {
+	if (message.content === 'sleep') {
+		message.channel.send(':ZZZ:');
+	}
+});
+
 // THIS IS THE (be!help) COMMAND
 
 bot.on('message', async message => {
