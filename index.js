@@ -7,7 +7,7 @@ const prefix = "be!"
 
 bot.on('ready', () => {
     console.log(`Logged in as ${bot.user.tag} :)`);
-    bot.user.setActivity("Bendylovania", {
+    bot.user.setActivity("Bendylovania | V 4.1", {
         type: "STREAMING",
         url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     });
