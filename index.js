@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-const prefix = "test!"
+const prefix = "be!"
 
 // THIS IS THE STATUS
 
@@ -18,15 +18,15 @@ bot.on('ready', () => {
 // THIS IS THE (be!help) COMMAND
 
 bot.on('message', async message => {
-	if (message.content === "test!help" ) {
+	if (message.content === "be!help" ) {
 	const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
 		.setTitle('COMMANDS')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
 		.setDescription('**Please keep in mind that this is still under development!**')
-		.addField(':tools: Moderation', '``test!help 1``', true)
-		.addField(':gear: Utility', '``test!help 2``', true)
-		.addField(':game_die: Fun', '``test!help 3``', true)
+		.addField(':tools: Moderation', '``be!help 1``', true)
+		.addField(':gear: Utility', '``be!help 2``', true)
+		.addField(':game_die: Fun', '``be!help 3``', true)
 		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
 		.setTimestamp()
 		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
@@ -39,7 +39,7 @@ bot.on('message', async message => {
 // Page 1
 
 bot.on('message', async message => {
-	if (message.content === "test!help 1" ) {
+	if (message.content === "be!help 1" ) {
 	const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
 		.setTitle('Moderation commands')
@@ -57,12 +57,12 @@ bot.on('message', async message => {
 // Page 2
 
 bot.on('message', async message => {
-	if (message.content === "test!help 2" ) {
+	if (message.content === "be!help 2" ) {
 	const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
 		.setTitle('Utility commands')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
-		.addField('Invite', '``test!invite``', true)
+		.addField('Invite', '``be!invite``', true)
 		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
 		.setTimestamp()
 		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
@@ -75,17 +75,17 @@ bot.on('message', async message => {
 // Page 3
 
 bot.on('message', async message => {
-	if (message.content === "test!help 3" ) {
+	if (message.content === "be!help 3" ) {
 	const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
 		.setTitle('Fun commands')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
 		.setDescription('Coming soon!')
-		.addField('Lol', '``test!lol``', true)
-		.addField('Objection', '``test!objection``', true)
-		.addField('Hold It', '``test!holdit``', true)
-		.addField('Take That', '``test!takethat``', true)
-		.addField('OwO', '``test!owo``', true)
+		.addField('Lol', '``be!lol``', true)
+		.addField('Objection', '``be!objection``', true)
+		.addField('Hold It', '``be!holdit``', true)
+		.addField('Take That', '``be!takethat``', true)
+		.addField('OwO', '``be!owo``', true)
 		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
 		.setTimestamp()
 		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
@@ -98,7 +98,7 @@ bot.on('message', async message => {
 // THESE ARE THE FUN COMMANDS
 
 bot.on('message', async message => {
-	if (message.content === "test!owo" ) {
+	if (message.content === "be!owo" ) {
 		message.delete().catch(O_o => { }); 
 	const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
@@ -115,7 +115,7 @@ bot.on('message', async message => {
 })
 
 bot.on('message', async message => {
-	if (message.content === "test!lol" ) {
+	if (message.content === "be!lol" ) {
 		message.delete().catch(O_o => { });
 	const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
@@ -132,7 +132,7 @@ bot.on('message', async message => {
 })
 
 bot.on('message', async message => {
-	if (message.content === "test!objection" ) {
+	if (message.content === "be!objection" ) {
 		message.delete().catch(O_o => { });
 	const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
@@ -149,7 +149,7 @@ bot.on('message', async message => {
 })
 
 bot.on('message', async message => {
-	if (message.content === "test!holdit" ) {
+	if (message.content === "be!holdit" ) {
 		message.delete().catch(O_o => { });
 	const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
@@ -166,7 +166,7 @@ bot.on('message', async message => {
 })
 
 bot.on('message', async message => {
-	if (message.content === "test!takethat" ) {
+	if (message.content === "be!takethat" ) {
 		message.delete().catch(O_o => { });
 	const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
@@ -185,7 +185,7 @@ bot.on('message', async message => {
 // THESE ARE UTILITY COMMANDS
 
 bot.on('message', async message => {
-	if (message.content === "test!invite" ) {
+	if (message.content === "be!invite" ) {
 	const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
 		.setTitle('INVITE')
