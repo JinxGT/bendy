@@ -201,6 +201,17 @@ bot.on('message', async message => {
 	
 })
 
+// THIS IS THE BAN COMMAND
+
+bot.on('message', async message => {
+	if (message.content === "be!invite" ) {
+guildMember.ban({ days: 7, reason: 'They deserved it' })
+  .then(console.log)
+  .catch(console.error);	
+	}	
+	
+})
+
 // THIS IS THE TOKEN HOLDER
 
 bot.login(process.env.token);
