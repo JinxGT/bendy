@@ -206,7 +206,15 @@ bot.on('message', async message => {
 // If the message content starts with "!kick"
 bot.on('message', async message => {
   if (message.content.startsWith('be!kick')) {
-	  if (msg.member.haspermission('KICK_MEMBER') return.message.reply("You don't have permisson to use this command!")
+	  if (msg.member.hasPermission("KICK_MEMBERS") {
+    if (msg.members.mentions.first()) {
+        try {
+            msg.members.mentions.first().kick();
+        } catch {
+            msg.reply("I do not have permissions to kick " + msg.members.mentions.first());
+    }else {
+        msg.reply("You do not have permissions to kick " + msg.members.mentions.first());
+}
     // Assuming we mention someone in the message, this will return the user
     // Read more about mentions over at https://discord.js.org/#/docs/main/master/class/MessageMentions
     const user = message.mentions.users.first();
@@ -249,7 +257,15 @@ bot.on('message', async message => {
 // if the message content starts with "!ban"
 bot.on('message', async message => {
   if (message.content.startsWith('be!ban')) {
-	  if (msg.member.haspermission('BAN_MEMBER') return.message.reply("You don't have permisson to use this command!")
+	  if (msg.member.hasPermission("BAN_MEMBERS") {
+    if (msg.members.mentions.first()) {
+        try {
+            msg.members.mentions.first().ban();
+        } catch {
+            msg.reply("I do not have permissions to ban" + msg.members.mentions.first());
+    }else {
+        msg.reply("You do not have permissions to ban" + msg.members.mentions.first());
+}
     // Assuming we mention someone in the message, this will return the user
     // Read more about mentions over at https://discord.js.org/#/docs/main/master/class/MessageMentions
     const user = message.mentions.users.first();
