@@ -206,7 +206,7 @@ bot.on('message', async message => {
 // If the message content starts with "!kick"
 bot.on('message', async message => {
   if (message.content.startsWith('be!kick')) {
-	  if (msg.member.haspermission('KICK_MEMBER') return message.reply("You don't have permission to use this command!")
+	  if (msg.member.haspermission('KICK_MEMBER') return message.reply("You don't have permission to use this command!"))
     // Assuming we mention someone in the message, this will return the user
     // Read more about mentions over at https://discord.js.org/#/docs/main/master/class/MessageMentions
     const user = message.mentions.users.first();
@@ -249,7 +249,7 @@ bot.on('message', async message => {
 // if the message content starts with "!ban"
 bot.on('message', async message => {
   if (message.content.startsWith('be!ban')) {
-	  if (msg.member.haspermission('BAN_MEMBER') return message.reply("You don't have permission to use this command!")
+	  if (msg.member.haspermission('BAN_MEMBER') return message.reply("You don't have permission to use this command!"))
     // Assuming we mention someone in the message, this will return the user
     // Read more about mentions over at https://discord.js.org/#/docs/main/master/class/MessageMentions
     const user = message.mentions.users.first();
