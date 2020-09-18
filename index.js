@@ -7,7 +7,7 @@ const prefix = "be!"
 
 bot.on('ready', () => {
     console.log(`Logged in as ${bot.user.tag} :)`);
-    bot.user.setActivity("discord.gg/hsSAX9K | V 5.1", {
+    bot.user.setActivity("discord.gg/hsSAX9K | V 7.0", {
         type: "STREAMING",
         url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     });
