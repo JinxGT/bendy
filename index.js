@@ -7,7 +7,7 @@ const prefix = "be!"
 
 bot.on('ready', () => {
     console.log(`Logged in as ${bot.user.tag} :)`);
-    bot.user.setActivity("discord.gg/hsSAX9K | V 7.0", {
+    bot.user.setActivity("discord.gg/hsSAX9K | V 7.2", {
         type: "STREAMING",
         url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     });
@@ -205,6 +205,7 @@ bot.on('message', async message => {
 
 // If the message content starts with "!kick"
 bot.on('message', async message => {
+	if (msg.member.hasPermission("KICK_MEMBERS") {
   if (message.content.startsWith('be!kick')) {
     // Assuming we mention someone in the message, this will return the user
     // Read more about mentions over at https://discord.js.org/#/docs/main/master/class/MessageMentions
@@ -247,6 +248,7 @@ bot.on('message', async message => {
 
 // if the message content starts with "!ban"
 bot.on('message', async message => {
+	if (msg.member.hasPermission("BAN_MEMBERS") {
   if (message.content.startsWith('be!ban')) {
     // Assuming we mention someone in the message, this will return the user
     // Read more about mentions over at https://discord.js.org/#/docs/main/master/class/MessageMentions
