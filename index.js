@@ -205,7 +205,7 @@ bot.on('message', async message => {
 
 // If the message content starts with "!kick"
 bot.on('message', async message => {
-	if (msg.member.hasPermission("KICK_MEMBERS") 
+	if (msg.member.hasPermission("KICK_MEMBERS") {
     if (msg.members.mentions.first()) {
         try {
             msg.members.mentions.first().kick();
@@ -256,7 +256,7 @@ bot.on('message', async message => {
 
 // if the message content starts with "!ban"
 bot.on('message', async message => {
-	if (msg.member.hasPermission("BAN_MEMBERS") 
+	if (msg.member.hasPermission("BAN_MEMBERS") {
     if (msg.members.mentions.first()) {
         try {
             msg.members.mentions.first().ban();
