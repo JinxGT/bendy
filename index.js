@@ -205,18 +205,14 @@ bot.on('message', async message => {
 
 bot.on("message", (message) => {
     if (message.content.startsWith("be!kick")) {
-        if(!message.member.roles.find("name", "MODS"))
-            return;
+if(!message.member.roles.find("name", "Role that can use this bot"))
+   return;
         // Easy way to get member object though mentions.
         var member= message.mentions.members.first();
-
-        // No mentions catch
-        if (member === undefined) return;
-
-        // Kick
+        // kick
         member.kick().then((member) => {
             // Successmessage
-            message.channel.send(":wave: " + member.displayName + " has been successfully kicked :point_right: ");
+            message.channel.send(":wave: " + member.displayName + " has been successfully banned :point_right: ");
         }).catch(() => {
              // Failmessage
             message.channel.send("Access Denied");
@@ -226,18 +222,14 @@ bot.on("message", (message) => {
 
 bot.on("message", (message) => {
     if (message.content.startsWith("be!ban")) {
-        if(!message.member.roles.find("name", "MODS"))
-            return;
+if(!message.member.roles.find("name", "Role that can use this bot"))
+   return;
         // Easy way to get member object though mentions.
         var member= message.mentions.members.first();
-
-        // No mentions catch
-        if (member === undefined) return;
-
-        // Ban
+        // ban
         member.ban().then((member) => {
             // Successmessage
-            message.channel.send(":wave: " + member.displayName + " has been successfully kicked :point_right: ");
+            message.channel.send(":wave: " + member.displayName + " has been successfully banned :point_right: ");
         }).catch(() => {
              // Failmessage
             message.channel.send("Access Denied");
