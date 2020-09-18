@@ -203,39 +203,47 @@ bot.on('message', async message => {
 
 // THIS IS THE KICK AND BAN COMMANDS COMMAND
 
-bot.on("message", (message) => {
-    if (message.content.startsWith("be!kick")) {
-if(!message.member.roles.find("name", "Role that can use this bot"))
-   return;
-        // Easy way to get member object though mentions.
-        var member= message.mentions.members.first();
-        // kick
-        member.kick().then((member) => {
-            // Successmessage
-            message.channel.send(":wave: " + member.displayName + " has been successfully banned :point_right: ");
-        }).catch(() => {
-             // Failmessage
-            message.channel.send("Access Denied");
-        });
-    }
-});
+module.exports.run = async (bot, message, args) => {
 
-bot.on("message", (message) => {
-    if (message.content.startsWith("be!ban")) {
-if(!message.member.roles.find("name", "Role that can use this bot"))
-   return;
-        // Easy way to get member object though mentions.
-        var member= message.mentions.members.first();
-        // ban
-        member.ban().then((member) => {
-            // Successmessage
-            message.channel.send(":wave: " + member.displayName + " has been successfully banned :point_right: ");
-        }).catch(() => {
-             // Failmessage
-            message.channel.send("Access Denied");
-        });
+    if (message.member.hasPermission("KICK_MEMBERS")) {
+
+        if (!message.mentions.users) return message.reply('You must tag 1 user.');
+
+        else {
+
+            const channel = message.guild.channels.cache.get(CHANNEL_ID_HERE);
+            const member = message.mentions.members.first();
+            let reason = message.content.split(" ").slice(2).join(' ');
+
+            if (member.kickable == false) return message.channel.send("That user cannot be kicked!");
+
+            else {
+
+                if (!reason) reason = (`No reason provided.`);
+
+                await member.send(`You have been kicked from **${message.guild.name}** with the reason: **${reason}**`)
+                    .catch(err => message.channel.send(`⚠ Unable to contact **${member}**.`));
+
+                await member.kick(reason);
+
+                const kickEmbed = new discord.MessageEmbed()
+                    .setAuthor(member.user.tag, member.user.avatarURL())
+                    .setColor("#ee0000")
+                    .setTimestamp()
+                    .addField("Kicked By", message.author.tag)
+                    .addField("Reason", reason);
+
+                await channel.send(kickEmbed);
+
+                console.log(`${message.author.tag} kicked ${member.user.tag} from '${message.guild.name}' with the reason: '${reason}'.`);
+
+            }
+        }
+    } else {
+        message.channel.send("You do not have permission to use kick.");
+        return;
     }
-});
+}
 
 // THIS IS THE TOKEN HOLDER
 
