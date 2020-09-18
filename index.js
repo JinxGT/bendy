@@ -204,6 +204,7 @@ bot.on('message', async message => {
 // THIS IS THE KICK AND BAN COMMANDS COMMAND
 
 // If the message content starts with "!kick"
+bot.on('message', async message => {
   if (message.content.startsWith('be!kick')) {
     // Assuming we mention someone in the message, this will return the user
     // Read more about mentions over at https://discord.js.org/#/docs/main/master/class/MessageMentions
@@ -245,6 +246,7 @@ bot.on('message', async message => {
 });
 
 // if the message content starts with "!ban"
+bot.on('message', async message => {
   if (message.content.startsWith('be!ban')) {
     // Assuming we mention someone in the message, this will return the user
     // Read more about mentions over at https://discord.js.org/#/docs/main/master/class/MessageMentions
