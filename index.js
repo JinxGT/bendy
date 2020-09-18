@@ -206,6 +206,14 @@ bot.on('message', async message => {
 // If the message content starts with "!kick"
 bot.on('message', async message => {
 	if (msg.member.hasPermission("KICK_MEMBERS") {
+    if (msg.members.mentions.first()) {
+        try {
+            msg.members.mentions.first().kick();
+        } catch {
+            msg.reply("I do not have permissions to kick " + msg.members.mentions.first());
+    }else {
+        msg.reply("You do not have permissions to kick " + msg.members.mentions.first());
+}
   if (message.content.startsWith('be!kick')) {
     // Assuming we mention someone in the message, this will return the user
     // Read more about mentions over at https://discord.js.org/#/docs/main/master/class/MessageMentions
@@ -249,6 +257,14 @@ bot.on('message', async message => {
 // if the message content starts with "!ban"
 bot.on('message', async message => {
 	if (msg.member.hasPermission("BAN_MEMBERS") {
+    if (msg.members.mentions.first()) {
+        try {
+            msg.members.mentions.first().ban();
+        } catch {
+            msg.reply("I do not have permissions to ban" + msg.members.mentions.first());
+    }else {
+        msg.reply("You do not have permissions to ban" + msg.members.mentions.first());
+}
   if (message.content.startsWith('be!ban')) {
     // Assuming we mention someone in the message, this will return the user
     // Read more about mentions over at https://discord.js.org/#/docs/main/master/class/MessageMentions
