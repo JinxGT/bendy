@@ -44,7 +44,6 @@ bot.on('message', async message => {
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
 		.setDescription('To invite this bot to your server use the ``be!invite`` command!')
 		.addField("⏳ ping", `${Math.round(bot.ws.ping)}ms`, false)
-		.addField(":globe_with_meridians: Servers", `${bot.guilds.array().length}`, false)
 		.addField(":yellow_circle: Status", `Possible downtime and latency!`, false)
 		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
 		.setTimestamp()
