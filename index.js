@@ -203,25 +203,52 @@ bot.on('message', async message => {
 
 // THESE ARE THE KICK AND BAN COMMANDS
 
-bot.on('message', async message => {
-	if (message.content === "be!kick") {
-        	if (message.author.bot) return;
-        	if (message.channel.type === "dm") return;
-        	if (!message.member.hasPermission("KICK_MEMBERS"))
-            return message.reply('You need "kick members" permission to use this command.');
+bot.on('message', message => {
+    const arguments = message.content.slice(prefix.length).trim().split(/ +/g);
+    const commandName = arguments.shift().toLowerCase();
+if (message.content.startsWith(prefix) && commandName == "kick") {
+    if(!message.member.hasPermission("KICK_MEMBERS")) return message.channel.send("Permissions invalid");
+    const userKick = message.mentions.users.first();
 
-        var member = message.mentions.members.first();
-        if (!member)
-            return message.reply("You need to specify a user in the server");
-        if (!member.kickable)
-            return message.reply("cannot kick this user");
+    if (userKick) {
+        var member = message.guild.member(userKick);
 
-        var reason = args.slice(2).join(' ');
-        if (!reason) reason = "no reason provided";
+        if (member) {
+            member.kick({
+                reason: `This person was kicked using a bot's moderation system. We are so sorry if this caused problems.`
+    }).then(() => {
+        message.reply(`A user been kicked.`) 
+    })
+} else {
+    message.reply(`User not found`);
+}
+    } else {
+        message.reply(`Please enter a name`)
+    }}})
 
-        member.kick(reason)
-            .catch(error => message.reply("sorry ${message.author} i couldn't kick, because of : ${error}"));
-        message.channel.send('${member.user.tag} has been kick by ${message.author.tag}, reason: ${reason}');
+
+    bot.on('message', message => {
+        const arguments = message.content.slice(prefix.length).trim().split(/ +/g);
+        const commandName = arguments.shift().toLowerCase();
+    if (message.content.startsWith(prefix) && commandName == "ban") {
+        if(!message.member.hasPermission("BAN_MEMBERS")) return message.channel.send("Permissions invalid");
+        const userBan = message.mentions.users.first();
+    
+        if (userBan) {
+            var member = message.guild.member(userBan);
+    
+            if (member) {
+                member.ban({
+                    reason: `This person was banned using a bot's moderation system. We are so sorry if this caused problems.`
+        }).then(() => {
+            message.reply(`a user has been banned!`) 
+        })
+    } else {
+        message.reply(`User not found`);
+    }
+        } else {
+            message.reply(`Please enter a name`)
+        }}})
 
 // THIS IS THE TOKEN HOLDER
 
