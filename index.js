@@ -241,18 +241,38 @@ if (message.content.startsWith(prefix) && commandName == "kick") {
                 member.ban({
                     reason: `This person was banned from the server!`
         }).then(() => {
-            message.reply(`This user has been banned!`) 
+            const exampleEmbed = new Discord.MessageEmbed()
+		.setColor('#383fff')
+		.setTitle('Ban')
+		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
+		.setDescription('https://discord.com/oauth2/authorize?client_id=750547209002680431&scope=bot')
+		.setDescription("That user was banned!")
+		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
+		.setTimestamp()
+		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
+			
+		message.channel.send(exampleEmbed);
         })
     } else {
-        message.reply(`unknow user!`);
+        const exampleEmbed = new Discord.MessageEmbed()
+		.setColor('#383fff')
+		.setTitle('ERROR')
+		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
+		.setDescription('https://discord.com/oauth2/authorize?client_id=750547209002680431&scope=bot')
+		.setDescription("Uknown user!")
+		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
+		.setTimestamp()
+		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
+			
+		message.channel.send(exampleEmbed);
     }
         } else {
             const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
-		.setTitle('INVITE')
+		.setTitle('ERROR')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
 		.setDescription('https://discord.com/oauth2/authorize?client_id=750547209002680431&scope=bot')
-		.setDescription("Please mention someone!")
+		.setDescription("Please mention a user!")
 		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
 		.setTimestamp()
 		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
