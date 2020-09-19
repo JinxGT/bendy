@@ -75,7 +75,7 @@ bot.on('message', async message => {
 	if (message.content === "be!status" ) {
 	const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
-		.setTitle('PONG!')
+		.setTitle('STATUS')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
 		.setDescription(':yellow_circle:: Possible downtime and latency!')
 		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
