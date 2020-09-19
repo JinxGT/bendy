@@ -42,11 +42,7 @@ bot.on('message', async message => {
 		.setColor('#383fff')
 		.setTitle('STATS')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
-		.setDescription('To invite this bot to your server use the ``be!invite`` command!')
-		.addField('**Users:**', `${mcount}`, false)
-		.addField('**Servers:**', `${scount}`, false)
-		.addField('**Text channels:**', `${tcount}`, false)
-		.addField('**Voice channels:**', `${vcount}`, false)
+		.setDescription('**COMING SOON!**') // To invite this bot to your server use the ``be!invite`` command!
 		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
 		.setTimestamp()
 		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
@@ -86,6 +82,7 @@ bot.on('message', async message => {
 		.setDescription('for more help please use the ``be!help`` command')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
 		.addField('Invite', '``be!invite``', false)
+		.addField('Stats', '``be!stats``', false)
 		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
 		.setTimestamp()
 		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
