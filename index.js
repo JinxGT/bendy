@@ -137,6 +137,7 @@ bot.on('message', async message => {
 		.addField('Stats', '``be!stats``', false)
 		.addField('Ping', '``be!ping``', false)
 		.addField('Status', '``be!status``', false)
+		.addField('Get premium', '``be!get-premium``', false)
 		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setTimestamp()
 		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
@@ -256,12 +257,12 @@ bot.on('message', async message => {
 // THESE ARE UTILITY COMMANDS
 
 bot.on('message', async message => {
-	if (message.content === "be!invite" ) {
+	if (message.content === "be!get-premium" ) {
 	const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
-		.setTitle('INVITE')
+		.setTitle('GET PREMIUM')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
-		.setDescription(" [``[Click here]``](https://discord.com/oauth2/authorize?client_id=750547209002680431&scope=bot)")
+		.setDescription(" [``[Click here]``](https://www.patreon.com/discordbendy)")
 		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setTimestamp()
 		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
