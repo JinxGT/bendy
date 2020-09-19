@@ -6,7 +6,14 @@ const prefix = "be!"
 // THIS IS THE STATUS
 
 bot.on('ready', () => {
-    console.log(`Logged in as ${bot.user.tag} :)`);
+    //console.log(`Logged in as ${bot.user.tag} :)`);
+	console.log("+--------------+");
+    console.log("|  BOT ONLINE  |");
+    console.log("+--------------+");
+    console.log(`| commands: ${bot.commands.length} |`);
+    console.log(`| guilds:   ${bot.guilds.array().length}  |`);
+    console.log(`| channels: ${bot.channels.array().length} |`);
+    console.log("+--------------+");
     bot.user.setActivity('discord.gg/hsSAX9K', { 
         type: "STREAMING",
         url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
