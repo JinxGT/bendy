@@ -20,7 +20,7 @@ bot.on('ready', () => {
 bot.on('message', async message => {
 	if (message.content === "be!help" ) {
 	const exampleEmbed = new Discord.MessageEmbed()
-		.setColor('#383fff')
+		.setColor('#fb1309')
 		.setTitle('COMMANDS')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setDescription('**Please keep in mind that this is still under development. If you need support please use ``be!support``!**')
@@ -39,7 +39,7 @@ bot.on('message', async message => {
 bot.on('message', async message => {
 	if (message.content === "be!stats" ) {
 	const exampleEmbed = new Discord.MessageEmbed()
-		.setColor('#383fff')
+		.setColor('#fb1309')
 		.setTitle('STATS')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setDescription('To invite this bot to your server use the ``be!invite`` command!')
@@ -57,7 +57,7 @@ bot.on('message', async message => {
 bot.on('message', async message => {
 	if (message.content === "be!ping" ) {
 	const exampleEmbed = new Discord.MessageEmbed()
-		.setColor('#383fff')
+		.setColor('#fb1309')
 		.setTitle('PONG!')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.addField("⏳ Your ping is:", `${Math.round(bot.ws.ping)}ms`, false)
@@ -91,7 +91,7 @@ bot.on('message', async message => {
 bot.on('message', async message => {
 	if (message.content === "be!status" ) {
 	const exampleEmbed = new Discord.MessageEmbed()
-		.setColor('#383fff')
+		.setColor('#fb1309')
 		.setTitle('STATUS')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setDescription(':yellow_circle:: Possible downtime and latency!')
@@ -109,7 +109,7 @@ bot.on('message', async message => {
 bot.on('message', async message => {
 	if (message.content === "be!mod" ) {
 	const exampleEmbed = new Discord.MessageEmbed()
-		.setColor('#383fff')
+		.setColor('#fb1309')
 		.setTitle('Moderation commands')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setDescription('for more help please use the ``be!help`` command')
@@ -129,7 +129,7 @@ bot.on('message', async message => {
 bot.on('message', async message => {
 	if (message.content === "be!util" ) {
 	const exampleEmbed = new Discord.MessageEmbed()
-		.setColor('#383fff')
+		.setColor('#fb1309')
 		.setTitle('Utility commands')
 		.setDescription('for more help please use the ``be!help`` command')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
@@ -153,7 +153,7 @@ bot.on('message', async message => {
 bot.on('message', async message => {
 	if (message.content === "be!fun" ) {
 	const exampleEmbed = new Discord.MessageEmbed()
-		.setColor('#383fff')
+		.setColor('#fb1309')
 		.setTitle('Fun commands')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setDescription('for more help please use the ``be!help`` command')
@@ -178,7 +178,7 @@ bot.on('message', async message => {
 bot.on('message', async message => {
 	if (message.content === "be!owo" ) {
 	const exampleEmbed = new Discord.MessageEmbed()
-		.setColor('#383fff')
+		.setColor('#fb1309')
 		.setTitle('OwO')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setDescription('Just why?')
@@ -194,7 +194,7 @@ bot.on('message', async message => {
 bot.on('message', async message => {
 	if (message.content === "be!lol" ) {
 	const exampleEmbed = new Discord.MessageEmbed()
-		.setColor('#383fff')
+		.setColor('#fb1309')
 		.setTitle('LOL')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setDescription('Lots of Love to you to!')
@@ -210,7 +210,7 @@ bot.on('message', async message => {
 bot.on('message', async message => {
 	if (message.content === "be!objection" ) {
 	const exampleEmbed = new Discord.MessageEmbed()
-		.setColor('#383fff')
+		.setColor('#fb1309')
 		.setTitle('OBJECTION')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setDescription('idk why tho...')
@@ -226,7 +226,7 @@ bot.on('message', async message => {
 bot.on('message', async message => {
 	if (message.content === "be!holdit" ) {
 	const exampleEmbed = new Discord.MessageEmbed()
-		.setColor('#383fff')
+		.setColor('#fb1309')
 		.setTitle('HOLD IT!!!')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setDescription('please...')
@@ -242,7 +242,7 @@ bot.on('message', async message => {
 bot.on('message', async message => {
 	if (message.content === "be!takethat" ) {
 	const exampleEmbed = new Discord.MessageEmbed()
-		.setColor('#383fff')
+		.setColor('#fb1309')
 		.setTitle('TAKE THAT')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setDescription('you are lol!!!')
@@ -260,7 +260,7 @@ bot.on('message', async message => {
 bot.on('message', async message => {
 	if (message.content === "be!get-premium" ) {
 	const exampleEmbed = new Discord.MessageEmbed()
-		.setColor('#383fff')
+		.setColor('#fb1309')
 		.setTitle('GET PREMIUM')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setDescription(" [``[Click here]``](https://www.patreon.com/discordbendy)")
@@ -276,7 +276,7 @@ bot.on('message', async message => {
 bot.on('message', async message => {
 	if (message.content === "be!invite" ) {
 	const exampleEmbed = new Discord.MessageEmbed()
-		.setColor('#383fff')
+		.setColor('#fb1309')
 		.setTitle('INVITE')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setDescription(" [``[Click here]``](https://discord.com/oauth2/authorize?client_id=750547209002680431&scope=bot)")
@@ -293,7 +293,7 @@ bot.on('message', async message => {
 bot.on('message', async message => {
 	if (message.content === "be!support" ) {
 	const exampleEmbed = new Discord.MessageEmbed()
-		.setColor('#383fff')
+		.setColor('#fb1309')
 		.setTitle('Support')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setDescription(" [``[Click here]``](https://discord.gg/wstKjrX)")
@@ -309,7 +309,7 @@ bot.on('message', async message => {
 bot.on('message', async message => {
 	if (message.content === "be!premium" ) {
 	const exampleEmbed = new Discord.MessageEmbed()
-		.setColor('#383fff')
+		.setColor('#fb1309')
 		.setTitle('Premium Features')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setDescription("To get premium use the command ``be!get-premium``!")
@@ -364,7 +364,7 @@ if (message.content.startsWith(prefix) && commandName == "kick") {
                     reason: `This person was banned from the server!`
         }).then(() => {
             const exampleEmbed = new Discord.MessageEmbed()
-		.setColor('#383fff')
+		.setColor('#fb1309')
 		.setTitle('Ban')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setDescription('https://discord.com/oauth2/authorize?client_id=750547209002680431&scope=bot')
@@ -377,7 +377,7 @@ if (message.content.startsWith(prefix) && commandName == "kick") {
         })
     } else {
         const exampleEmbed = new Discord.MessageEmbed()
-		.setColor('#383fff')
+		.setColor('#fb1309')
 		.setTitle('ERROR')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setDescription('https://discord.com/oauth2/authorize?client_id=750547209002680431&scope=bot')
@@ -390,7 +390,7 @@ if (message.content.startsWith(prefix) && commandName == "kick") {
     }
         } else {
             const exampleEmbed = new Discord.MessageEmbed()
-		.setColor('#383fff')
+		.setColor('#fb1309')
 		.setTitle('ERROR')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setDescription('https://discord.com/oauth2/authorize?client_id=750547209002680431&scope=bot')
