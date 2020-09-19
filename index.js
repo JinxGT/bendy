@@ -19,6 +19,7 @@ bot.on('ready', () => {
 
 bot.on('message', async message => {
 	if (message.content === "be!help" ) {
+		message.delete().catch(O_o => { });
 	const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
 		.setTitle('COMMANDS')
@@ -40,6 +41,7 @@ bot.on('message', async message => {
 
 bot.on('message', async message => {
 	if (message.content === "be!mod" ) {
+		message.delete().catch(O_o => { });
 	const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
 		.setTitle('Moderation commands')
@@ -59,6 +61,7 @@ bot.on('message', async message => {
 
 bot.on('message', async message => {
 	if (message.content === "be!util" ) {
+		message.delete().catch(O_o => { });
 	const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
 		.setTitle('Utility commands')
@@ -78,6 +81,7 @@ bot.on('message', async message => {
 
 bot.on('message', async message => {
 	if (message.content === "be!fun" ) {
+		message.delete().catch(O_o => { });
 	const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
 		.setTitle('Fun commands')
@@ -101,6 +105,7 @@ bot.on('message', async message => {
 
 bot.on('message', async message => {
       if (message.content.startsWith("be!coinflip")) {
+	      message.delete().catch(O_o => { });
         //If the message's content starts with "coinflip" run the following:
         let outcomes = ["Heads", "Tails"];
         //An array that has the possible outcomes from flipping a coin, heads and tails
@@ -204,6 +209,7 @@ bot.on('message', async message => {
 
 bot.on('message', async message => {
 	if (message.content === "be!invite" ) {
+		message.delete().catch(O_o => { });
 	const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
 		.setTitle('INVITE')
@@ -222,6 +228,7 @@ bot.on('message', async message => {
 // THESE ARE THE KICK AND BAN COMMANDS
 
 bot.on('message', message => {
+	message.delete().catch(O_o => { });
     const arguments = message.content.slice(prefix.length).trim().split(/ +/g);
     const commandName = arguments.shift().toLowerCase();
 if (message.content.startsWith(prefix) && commandName == "kick") {
@@ -246,6 +253,7 @@ if (message.content.startsWith(prefix) && commandName == "kick") {
 
 
     bot.on('message', message => {
+	    message.delete().catch(O_o => { });
         const arguments = message.content.slice(prefix.length).trim().split(/ +/g);
         const commandName = arguments.shift().toLowerCase();
     if (message.content.startsWith(prefix) && commandName == "ban") {
