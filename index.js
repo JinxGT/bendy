@@ -42,7 +42,7 @@ bot.on('message', async message => {
 		.setColor('#383fff')
 		.setTitle('STATS')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
-		.setDescription('**COMING SOON!**') // To invite this bot to your server use the ``be!invite`` command!
+		.setDescription('To invite this bot to your server use the ``be!invite`` command!')
 		.addField("⏳ ping", `${Math.round(bot.ws.ping)}ms`, false)
 		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
 		.setTimestamp()
