@@ -7,7 +7,7 @@ const prefix = "be!"
 
 bot.on('ready', () => {
     console.log(`Logged in as ${bot.user.tag} :)`);
-    bot.user.setActivity('undertale!', { 
+    bot.user.setActivity('undertale | be!help', { 
         type: "PLAYING",
         url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     });
