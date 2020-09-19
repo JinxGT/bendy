@@ -208,7 +208,7 @@ bot.on('message', async message => {
         	if (message.author.bot) return;
         	if (message.channel.type === "dm") return;
         	if (!message.member.hasPermission("KICK_MEMBERS"))
-            return message.reply(You need "kick members" permission to use this command.);
+            return message.reply('You need "kick members" permission to use this command.');
 
         var member = message.mentions.members.first();
         if (!member)
@@ -220,8 +220,8 @@ bot.on('message', async message => {
         if (!reason) reason = "no reason provided";
 
         member.kick(reason)
-            .catch(error => message.reply(sorry ${message.author} i couldn't kick, because of : ${error}));
-        message.channel.send(${member.user.tag} has been kick by ${message.author.tag}, reason: ${reason});
+            .catch(error => message.reply("sorry ${message.author} i couldn't kick, because of : ${error}"));
+        message.channel.send('${member.user.tag} has been kick by ${message.author.tag}, reason: ${reason}');
 
 // THIS IS THE TOKEN HOLDER
 
