@@ -106,18 +106,11 @@ bot.on('message', async message => {
 bot.on('message', async message => {
       if (message.content.startsWith("be!coinflip")) {
 	      message.delete().catch(O_o => { });
-        //If the message's content starts with "coinflip" run the following:
         let outcomes = ["Heads", "Tails"];
-        //An array that has the possible outcomes from flipping a coin, heads and tails
         let outcomesIndex = Math.round(Math.random() * outcomes.length);
-        //This will be what index of the outcomes array should be selected (arrays start at 0)
-        //Math.round() rounds the parameter inside, in this case, Math.random()
         message.channel.send(outcomes[outcomesIndex]);
-        //'koolMessage' is what we decided to call the message in the 'message' event, above. It can be called whatever you'd like
-        //'channel' is the text channel in which 'koolMessage' was sent
-        //The send() function sends a message with the included argument (e.g. send("hello there!")). It must be sent in a channel, in this case, the channel in which the 'koolMessage' from the user was sent
-        //If we would have outcomes[0], the output would be "Heads", if we would have outcomes[1] the output would be "Tails", so we randomize it, giving us either outcomes[0] or outcomes[1]
-      }
+        
+      	}
     });
 
 bot.on('message', async message => {
