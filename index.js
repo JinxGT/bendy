@@ -81,7 +81,7 @@ bot.on('message', async message => {
 
 bot.on('message', async message => {
       if (message.content.startsWith("be!sarcasticball")) {
-        let outcomes = ['This is a premium feature, use the``be!get-premium`` command to get premium!'];
+        let outcomes = ['This is a premium feature, use the ``be!get-premium`` command to get premium!'];
         let outcomesIndex = Math.round(Math.random() * outcomes.length);
         message.channel.send(outcomes[outcomesIndex]);
 
