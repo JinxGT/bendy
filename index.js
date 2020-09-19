@@ -24,8 +24,8 @@ bot.on('message', async message => {
 		.setTitle('COMMANDS')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
 		.setDescription('**Please keep in mind that this is still under development!**')
-		.addField(':tools: Moderation', '``be!moderation``', false)
-		.addField(':gear: Utility', '``be!utility``', false)
+		.addField(':tools: Moderation', '``be!mod``', false)
+		.addField(':gear: Utility', '``be!util``', false)
 		.addField(':game_die: Fun', '``be!fun``', false)
 		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
 		.setTimestamp()
@@ -39,7 +39,7 @@ bot.on('message', async message => {
 // Page 1
 
 bot.on('message', async message => {
-	if (message.content === "be!moderation" ) {
+	if (message.content === "be!mod" ) {
 	const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
 		.setTitle('Moderation commands')
@@ -58,10 +58,11 @@ bot.on('message', async message => {
 // Page 2
 
 bot.on('message', async message => {
-	if (message.content === "be!utility" ) {
+	if (message.content === "be!util" ) {
 	const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
 		.setTitle('Utility commands')
+		.setDescription('for more help please use the ``be!help`` command')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
 		.addField('Invite', '``be!invite``', false)
 		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
