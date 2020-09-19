@@ -92,6 +92,8 @@ bot.on('message', async message => {
 		.addField('Hold It', '``be!holdit``', false)
 		.addField('Take That', '``be!takethat``', false)
 		.addField('OwO', '``be!owo``', true)
+		.addField('Coin Flip', '``be!coinflip``', true)
+		.addField('8Ball', '``be!8ball``', true)
 		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
 		.setTimestamp()
 		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
@@ -102,6 +104,18 @@ bot.on('message', async message => {
 })
 
 // THESE ARE THE FUN COMMANDS
+
+function doMagic8BallVoodoo() {
+    var rand = ['Yes', 'No', 'Why are you even trying?', 'What do you think? NO', 'Maybe', 'Never', 'Yep'];
+
+    return rand[Math.floor(Math.random()*rand.length)];
+}
+
+bot.on('message', async message => {
+if(input == "be!8ball")
+{
+    bot.reply(message, 'Your anwser is: ' + doMagic8BallVoodoo());
+}
 
 bot.on('message', async message => {
       if (message.content.startsWith("be!coinflip")) {
