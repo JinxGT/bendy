@@ -71,36 +71,22 @@ bot.on('message', async message => {
 })
 
 bot.on('message', async message => {
-	if (message.content === "be!coinflip" ) {
-	const exampleEmbed = new Discord.MessageEmbed()
-		.setColor('#383fff')
-		.setTitle('Coin Flip')
-		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
-		.setDescription('COMING SOON!')
-		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
-		.setTimestamp()
-		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
-			
-		message.channel.send(exampleEmbed);
-	}	
-	
-})
+      if (message.content.startsWith("be!8ball")) {
+        let outcomes = ['Signs point to yes. Except that you were born an idiot, you will die an idiot, and nothing will change in-between.', 'Without a doubt. Nah, I’m just messing with you, go shoot yourself.', 'My sources say no. They also tell me they hate you and hope you burn in hell.', 'Yes, definitely. Unless it doesn’t happen. Listen it’s not my fault your father didn’t love you. Get off my back!', 'Outlook not so good. Especially since you’re so goddamn ugly.', 'All signs point to yes. But on second thought, go fuck yourself.', 'As If', 'Ask Me If I Care', 'Dumb Question Ask Another', 'Forget About It', 'Get A Clue', 'In Your Dreams',  'Not A Chance', 'Obviously', 'Oh Please', 'Sure', 'That\'s Ridiculous', 'Well Maybe', 'What Do You Think?', 'Yes... You Prick', 'Who Cares?', 'Yeah And I\'m The Fucking Pope', 'Yeah Right', 'You Wish', 'You\'ve Got To Be Kidding...'];
+        let outcomesIndex = Math.round(Math.random() * outcomes.length);
+        message.channel.send(outcomes[outcomesIndex]);
+
+      	}
+    });
 
 bot.on('message', async message => {
-	if (message.content === "be!8ball" ) {
-	const exampleEmbed = new Discord.MessageEmbed()
-		.setColor('#383fff')
-		.setTitle('8BALL')
-		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
-		.setDescription('COMING SOON!')
-		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
-		.setTimestamp()
-		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
-			
-		message.channel.send(exampleEmbed);
-	}	
-	
-})
+      if (message.content.startsWith("be!coinflip")) {
+        let outcomes = ['HEADS', 'TAILS'];
+        let outcomesIndex = Math.round(Math.random() * outcomes.length);
+        message.channel.send(outcomes[outcomesIndex]);
+
+      	}
+    });
 
 bot.on('message', async message => {
 	if (message.content === "be!status" ) {
