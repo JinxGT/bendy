@@ -22,12 +22,12 @@ bot.on('message', async message => {
 	const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
 		.setTitle('COMMANDS')
-		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
+		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setDescription('**Please keep in mind that this is still under development!**')
 		.addField(':tools: Moderation', '``be!mod``', false)
 		.addField(':gear: Utility', '``be!util``', false)
 		.addField(':game_die: Fun', '``be!fun``', false)
-		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
+		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setTimestamp()
 		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
 			
@@ -41,11 +41,11 @@ bot.on('message', async message => {
 	const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
 		.setTitle('STATS')
-		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
+		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setDescription('To invite this bot to your server use the ``be!invite`` command!')
 		.addField("⏳ ping", `${Math.round(bot.ws.ping)}ms`, false)
 		.addField(":yellow_circle: Status", `Possible downtime and latency!`, false)
-		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
+		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setTimestamp()
 		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
 			
@@ -59,9 +59,9 @@ bot.on('message', async message => {
 	const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
 		.setTitle('PONG!')
-		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
+		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.addField("⏳ Your ping is:", `${Math.round(bot.ws.ping)}ms`, false)
-		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
+		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setTimestamp()
 		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
 			
@@ -93,9 +93,9 @@ bot.on('message', async message => {
 	const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
 		.setTitle('STATUS')
-		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
+		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setDescription(':yellow_circle:: Possible downtime and latency!')
-		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
+		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setTimestamp()
 		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
 			
@@ -111,11 +111,11 @@ bot.on('message', async message => {
 	const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
 		.setTitle('Moderation commands')
-		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
+		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setDescription('for more help please use the ``be!help`` command')
 		.addField('Kick', '``be!kick``', false)
 		.addField('Ban', '``be!ban``', false)
-		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
+		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setTimestamp()
 		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
 			
@@ -132,12 +132,12 @@ bot.on('message', async message => {
 		.setColor('#383fff')
 		.setTitle('Utility commands')
 		.setDescription('for more help please use the ``be!help`` command')
-		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
+		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.addField('Invite', '``be!invite``', false)
 		.addField('Stats', '``be!stats``', false)
 		.addField('Ping', '``be!ping``', false)
 		.addField('Status', '``be!status``', false)
-		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
+		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setTimestamp()
 		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
 			
@@ -153,7 +153,7 @@ bot.on('message', async message => {
 	const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
 		.setTitle('Fun commands')
-		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
+		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setDescription('for more help please use the ``be!help`` command')
 		.addField('Lol', '``be!lol``', false)
 		.addField('Objection', '``be!objection``', false)
@@ -162,7 +162,7 @@ bot.on('message', async message => {
 		.addField('OwO', '``be!owo``', false)
 		.addField('Coin Flip', '``be!coinflip``', false)
 		.addField('8Ball', '``be!8ball``', false)
-		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
+		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setTimestamp()
 		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
 			
@@ -178,9 +178,9 @@ bot.on('message', async message => {
 	const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
 		.setTitle('OwO')
-		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
+		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setDescription('Just why?')
-		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
+		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setTimestamp()
 		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
 			
@@ -194,7 +194,7 @@ bot.on('message', async message => {
 	const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
 		.setTitle('LOL')
-		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
+		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setDescription('Lots of Love to you to!')
 		.setThumbnail('https://media.tenor.com/images/01eeabe1dc9412e5bc8c9c23a8d5c750/tenor.gif')
 		.setTimestamp()
@@ -210,7 +210,7 @@ bot.on('message', async message => {
 	const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
 		.setTitle('OBJECTION')
-		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
+		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setDescription('idk why tho...')
 		.setThumbnail('https://i.imgur.com/19WEQFO.gif')
 		.setTimestamp()
@@ -226,7 +226,7 @@ bot.on('message', async message => {
 	const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
 		.setTitle('HOLD IT!!!')
-		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
+		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setDescription('please...')
 		.setThumbnail('https://i.imgur.com/6kg9dtc.png')
 		.setTimestamp()
@@ -242,7 +242,7 @@ bot.on('message', async message => {
 	const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
 		.setTitle('TAKE THAT')
-		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
+		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setDescription('you are lol!!!')
 		.setThumbnail('https://i.imgur.com/S45Dsnb.png')
 		.setTimestamp()
@@ -260,10 +260,9 @@ bot.on('message', async message => {
 	const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
 		.setTitle('INVITE')
-		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
-		.setDescription('https://discord.com/oauth2/authorize?client_id=750547209002680431&scope=bot')
+		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setDescription(" [``[Click here]``](https://discord.com/oauth2/authorize?client_id=750547209002680431&scope=bot)")
-		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
+		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setTimestamp()
 		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
 			
@@ -315,10 +314,10 @@ if (message.content.startsWith(prefix) && commandName == "kick") {
             const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
 		.setTitle('Ban')
-		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
+		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setDescription('https://discord.com/oauth2/authorize?client_id=750547209002680431&scope=bot')
 		.setDescription("That user was banned!")
-		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
+		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setTimestamp()
 		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
 			
@@ -328,10 +327,10 @@ if (message.content.startsWith(prefix) && commandName == "kick") {
         const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
 		.setTitle('ERROR')
-		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
+		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setDescription('https://discord.com/oauth2/authorize?client_id=750547209002680431&scope=bot')
 		.setDescription("Uknown user!")
-		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
+		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setTimestamp()
 		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
 			
@@ -341,10 +340,10 @@ if (message.content.startsWith(prefix) && commandName == "kick") {
             const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
 		.setTitle('ERROR')
-		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
+		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setDescription('https://discord.com/oauth2/authorize?client_id=750547209002680431&scope=bot')
 		.setDescription("Please mention a user!")
-		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
+		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setTimestamp()
 		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
 			
