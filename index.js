@@ -7,8 +7,10 @@ const prefix = "be!"
 
 bot.on('ready', () => {
     //console.log(`Logged in as ${bot.user.tag} :)`);
-	console.log("+--------------+");
+    console.log("+--------------+");
     console.log("|  BOT ONLINE  |");
+    console.log("+--------------+");
+    console.log("|  ping ${Math.round(bot.ws.ping)}ms  |");
     console.log("+--------------+");
     bot.user.setActivity('discord.gg/hsSAX9K', { 
         type: "STREAMING",
