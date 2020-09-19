@@ -7,8 +7,8 @@ const prefix = "be!"
 
 bot.on('ready', () => {
     console.log(`Logged in as ${bot.user.tag} :)`);
-    bot.user.setActivity('discord.gg/hsSAX9K', { 
-        type: "STREAMING",
+    bot.user.setActivity('undertale!', { 
+        type: "PLAYING",
         url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     });
 
