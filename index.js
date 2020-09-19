@@ -107,8 +107,7 @@ bot.on('message', async message => {
 
 bot.on('message', async message => {
       if (message.content.startsWith("be!8ball")) {
-	      message.delete().catch(O_o => { });
-        let outcomes = ["As I see it, yes.", "Ask again later.", "Very doubtful.", "Signs point to yes.", "Outlook good.", "Outlook not so good."];
+        let outcomes = ['Signs point to yes. Except that you were born an idiot, you will die an idiot, and nothing will change in-between.', 'Without a doubt. Nah, I’m just messing with you, go shoot yourself.', 'My sources say no. They also tell me they hate you and hope you burn in hell.', 'Yes, definitely. Unless it doesn’t happen. Listen it’s not my fault your father didn’t love you. Get off my back!', 'Outlook not so good. Especially since you’re so goddamn ugly.', 'All signs point to yes. But on second thought, go fuck yourself.', 'As If', 'Ask Me If I Care', 'Dumb Question Ask Another', 'Forget About It', 'Get A Clue', 'In Your Dreams',  'Not A Chance', 'Obviously', 'Oh Please', 'Sure', 'That\'s Ridiculous', 'Well Maybe', 'What Do You Think?', 'Yes... You Prick', 'Who Cares?', 'Yeah And I\'m The Fucking Pope', 'Yeah Right', 'You Wish', 'You\'ve Got To Be Kidding...'];
         let outcomesIndex = Math.round(Math.random() * outcomes.length);
         message.channel.send(outcomes[outcomesIndex]);
         
@@ -117,8 +116,7 @@ bot.on('message', async message => {
 
 bot.on('message', async message => {
       if (message.content.startsWith("be!coinflip")) {
-	      message.delete().catch(O_o => { });
-        let outcomes = ["Heads", "Tails"];
+        let outcomes = ['HEADS', 'TAILS'];
         let outcomesIndex = Math.round(Math.random() * outcomes.length);
         message.channel.send(outcomes[outcomesIndex]);
         
