@@ -24,9 +24,9 @@ bot.on('message', async message => {
 		.setTitle('COMMANDS')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
 		.setDescription('**Please keep in mind that this is still under development!**')
-		.addField(':tools: Moderation', '``be!help 1``', true)
-		.addField(':gear: Utility', '``be!help 2``', true)
-		.addField(':game_die: Fun', '``be!help 3``', true)
+		.addField(':tools: Moderation', '``be!moderation``', false)
+		.addField(':gear: Utility', '``be!utility``', false)
+		.addField(':game_die: Fun', '``be!fun``', false)
 		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
 		.setTimestamp()
 		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
@@ -39,12 +39,13 @@ bot.on('message', async message => {
 // Page 1
 
 bot.on('message', async message => {
-	if (message.content === "be!help 1" ) {
+	if (message.content === "be!moderation" ) {
 	const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
 		.setTitle('Moderation commands')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
-		.setDescription('Coming soon!')
+		.addField('Kick', '``be!kick``', false)
+		.addField('Ban', '``be!ban``', false)
 		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
 		.setTimestamp()
 		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
@@ -57,12 +58,12 @@ bot.on('message', async message => {
 // Page 2
 
 bot.on('message', async message => {
-	if (message.content === "be!help 2" ) {
+	if (message.content === "be!utility" ) {
 	const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
 		.setTitle('Utility commands')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
-		.addField('Invite', '``be!invite``', true)
+		.addField('Invite', '``be!invite``', false)
 		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
 		.setTimestamp()
 		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
@@ -75,16 +76,16 @@ bot.on('message', async message => {
 // Page 3
 
 bot.on('message', async message => {
-	if (message.content === "be!help 3" ) {
+	if (message.content === "be!fun" ) {
 	const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#383fff')
 		.setTitle('Fun commands')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
 		.setDescription('Coming soon!')
-		.addField('Lol', '``be!lol``', true)
-		.addField('Objection', '``be!objection``', true)
-		.addField('Hold It', '``be!holdit``', true)
-		.addField('Take That', '``be!takethat``', true)
+		.addField('Lol', '``be!lol``', false)
+		.addField('Objection', '``be!objection``', false)
+		.addField('Hold It', '``be!holdit``', false)
+		.addField('Take That', '``be!takethat``', false)
 		.addField('OwO', '``be!owo``', true)
 		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
 		.setTimestamp()
