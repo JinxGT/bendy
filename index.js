@@ -7,11 +7,9 @@ const prefix = "be!"
 
 bot.on('ready', () => {
     //console.log(`Logged in as ${bot.user.tag} :)`);
-    console.log("+--------------+");
-    console.log("|  BOT ONLINE  |");
-    console.log("+--------------+");
-    console.log("|  ping ${Math.round(bot.ws.ping)}ms  |");
-    console.log("+--------------+");
+    console.log("+-----------------------------------+");
+    console.log("|  Logged in as ${bot.user.tag} :)  |");
+    console.log("+-----------------------------------+");
     bot.user.setActivity('discord.gg/hsSAX9K', { 
         type: "STREAMING",
         url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
