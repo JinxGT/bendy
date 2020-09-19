@@ -72,7 +72,7 @@ bot.on('message', async message => {
 
 bot.on('message', async message => {
       if (message.content.startsWith("be!8ball")) {
-        let outcomes = ['Signs point to yes. Except that you were born an idiot, you will die an idiot, and nothing will change in-between.', 'Without a doubt. Nah, I’m just messing with you, go shoot yourself.', 'My sources say no. They also tell me they hate you and hope you burn in hell.', 'Yes, definitely. Unless it doesn’t happen. Listen it’s not my fault your father didn’t love you. Get off my back!', 'Outlook not so good. Especially since you’re so goddamn ugly.', 'All signs point to yes. But on second thought, go fuck yourself.', 'As If', 'Ask Me If I Care', 'Dumb Question Ask Another', 'Forget About It', 'Get A Clue', 'In Your Dreams',  'Not A Chance', 'Obviously', 'Oh Please', 'Sure', 'That\'s Ridiculous', 'Well Maybe', 'What Do You Think?', 'Yes... You Prick', 'Who Cares?', 'Yeah And I\'m The Fucking Pope', 'Yeah Right', 'You Wish', 'You\'ve Got To Be Kidding...'];
+        let outcomes = ['Signs point to yes.', 'Without a doubt.', 'My sources say no.', 'Yes, definitely.', 'Outlook not so good.', 'All signs point to yes.', 'Sure'];
         let outcomesIndex = Math.round(Math.random() * outcomes.length);
         message.channel.send(outcomes[outcomesIndex]);
 
@@ -138,6 +138,7 @@ bot.on('message', async message => {
 		.addField('Ping', '``be!ping``', false)
 		.addField('Status', '``be!status``', false)
 		.addField('Get premium', '``be!get-premium``', false)
+		.addField('Premium', '``be!premium``', false)
 		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setTimestamp()
 		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
@@ -296,6 +297,23 @@ bot.on('message', async message => {
 		.setTitle('Support')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setDescription(" [``[Click here]``](https://discord.gg/wstKjrX)")
+		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
+		.setTimestamp()
+		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
+			
+		message.channel.send(exampleEmbed);
+	}	
+	
+})
+
+bot.on('message', async message => {
+	if (message.content === "be!premium" ) {
+	const exampleEmbed = new Discord.MessageEmbed()
+		.setColor('#383fff')
+		.setTitle('Premium Features')
+		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
+		.setDescription("To get premium use the command ``be!get-premium``!")
+		.addField('Sarcastic 8BALL', '``b2!sarcasticball``', false)
 		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setTimestamp()
 		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
