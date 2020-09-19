@@ -201,6 +201,28 @@ bot.on('message', async message => {
 	
 })
 
+// THESE ARE THE KICK AND BAN COMMANDS
+
+bot.on('message', async message => {
+	if (message.content === "be!kick") {
+        	if (message.author.bot) return;
+        	if (message.channel.type === "dm") return;
+        	if (!message.member.hasPermission("KICK_MEMBERS"))
+            return message.reply(You need "kick members" permission to use this command.);
+
+        var member = message.mentions.members.first();
+        if (!member)
+            return message.reply("You need to specify a user in the server");
+        if (!member.kickable)
+            return message.reply("cannot kick this user");
+
+        var reason = args.slice(2).join(' ');
+        if (!reason) reason = "no reason provided";
+
+        member.kick(reason)
+            .catch(error => message.reply(sorry ${message.author} i couldn't kick, because of : ${error}));
+        message.channel.send(${member.user.tag} has been kick by ${message.author.tag}, reason: ${reason});
+
 // THIS IS THE TOKEN HOLDER
 
 bot.login(process.env.token);
