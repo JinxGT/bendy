@@ -42,7 +42,7 @@ bot.on('message', async message => {
 		.setColor('#383fff')
 		.setTitle('STATS')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/750546624694190090/JPEG_20200721_071825.jpg')
-		.setDescription('**Please keep in mind that this is still under development!**')
+		.setDescription('To invite this bot to your server use the ``be!invite`` command!')
 		.addField('**Users:**', `${mcount}`, false)
 		.addField('**Servers:**', `${scount}`, false)
 		.addField('**Text channels:**', `${tcount}`, false)
