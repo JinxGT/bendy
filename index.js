@@ -23,7 +23,7 @@ bot.on('message', async message => {
 		.setColor('#383fff')
 		.setTitle('COMMANDS')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
-		.setDescription('**Please keep in mind that this is still under development!**')
+		.setDescription('**Please keep in mind that this is still under development. If you need support please use ``be!support``!**')
 		.addField(':tools: Moderation', '``be!mod``', false)
 		.addField(':gear: Utility', '``be!util``', false)
 		.addField(':game_die: Fun', '``be!fun``', false)
@@ -280,6 +280,22 @@ bot.on('message', async message => {
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setDescription(" [``[Click here]``](https://discord.com/oauth2/authorize?client_id=750547209002680431&scope=bot)")
 		.addField('Get premium', '``be!get-premium``', false)
+		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
+		.setTimestamp()
+		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
+			
+		message.channel.send(exampleEmbed);
+	}	
+	
+})
+
+bot.on('message', async message => {
+	if (message.content === "be!support" ) {
+	const exampleEmbed = new Discord.MessageEmbed()
+		.setColor('#383fff')
+		.setTitle('Support')
+		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
+		.setDescription(" [``[Click here]``](https://discord.gg/wstKjrX)")
 		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setTimestamp()
 		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
