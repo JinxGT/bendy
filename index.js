@@ -105,17 +105,15 @@ bot.on('message', async message => {
 
 // THESE ARE THE FUN COMMANDS
 
-function doMagic8BallVoodoo() {
-    var rand = ['Yes', 'No', 'Why are you even trying?', 'What do you think? NO', 'Maybe', 'Never', 'Yep'];
-
-    return rand[Math.floor(Math.random()*rand.length)];
-}
-
 bot.on('message', async message => {
-if(input == "be!8ball")
-{
-    bot.reply(message, 'Your anwser is: ' + doMagic8BallVoodoo());
-}
+      if (message.content.startsWith("be!8ball")) {
+	      message.delete().catch(O_o => { });
+        let outcomes = ["As I see it, yes.", "Ask again later.", "Very doubtful.", "Signs point to yes.", "Outlook good.", "Outlook not so good."];
+        let outcomesIndex = Math.round(Math.random() * outcomes.length);
+        message.channel.send(outcomes[outcomesIndex]);
+        
+      	}
+    });
 
 bot.on('message', async message => {
       if (message.content.startsWith("be!coinflip")) {
