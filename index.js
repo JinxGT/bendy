@@ -37,6 +37,22 @@ bot.on('message', async message => {
 })
 
 bot.on('message', async message => {
+	if (message.content === "be!twitter" ) {
+	const exampleEmbed = new Discord.MessageEmbed()
+		.setColor('#fb1309')
+		.setTitle('TWITTER')
+		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
+		.setDescription('Take a look at our twitter: https://twitter.com/bot_bendy')
+		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
+		.setTimestamp()
+		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
+			
+		message.channel.send(exampleEmbed);
+	}	
+	
+})
+
+bot.on('message', async message => {
 	if (message.content === "be!stats" ) {
 	const exampleEmbed = new Discord.MessageEmbed()
 		.setColor('#fb1309')
