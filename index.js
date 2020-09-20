@@ -89,6 +89,15 @@ bot.on('message', async message => {
     });
 
 bot.on('message', async message => {
+      if (message.content.startsWith("be!dance")) {
+        let outcomes = ['This is a premium feature, use the ``be!get-premium`` command to get premium!'];
+        let outcomesIndex = Math.round(Math.random() * outcomes.length);
+        message.channel.send(outcomes[outcomesIndex]);
+
+      	}
+    });
+
+bot.on('message', async message => {
       if (message.content.startsWith("be!coinflip")) {
         let outcomes = ['HEADS', 'TAILS'];
         let outcomesIndex = Math.round(Math.random() * outcomes.length);
@@ -173,6 +182,7 @@ bot.on('message', async message => {
 		.addField('OwO', '``be!owo``', false)
 		.addField('Coin Flip', '``be!coinflip``', false)
 		.addField('8Ball', '``be!8ball``', false)
+		.addField('Sarcastic 8Ball', '``be!sarcasticball``', false)
 		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setTimestamp()
 		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
