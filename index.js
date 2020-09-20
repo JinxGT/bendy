@@ -344,7 +344,7 @@ bot.on('message', async message => {
 		.setDescription("To get premium use the command ``be!get-premium``. We are also adding lots more commands daily!")
 		.addField('Sarcastic 8BALL', '``b2!sarcasticball``', false)
 		.addField('Dance', '``b2!dance``', false)
-		.addField('Random Cat Image', '``b2!cat``', false)
+		.addField('Server Info', '``b2!server``', false)
 		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setTimestamp()
 		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
