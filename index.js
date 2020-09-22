@@ -368,6 +368,21 @@ bot.on('message', async message => {
 	
 })
 
+bot.on('message', async message => {
+	if (message.content === "be!gif bendytale-lore" ) {
+	const exampleEmbed = new Discord.MessageEmbed()
+		.setColor('#fb1309')
+		.setTitle('Bendytale Lore')
+		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
+		.setImage('https://media.discordapp.net/attachments/741518982988693625/758099801115459634/videotogif_2020.09.06_13.31.00.gif?width=400&height=400')
+		.setTimestamp()
+		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
+			
+		message.channel.send(exampleEmbed);
+	}	
+	
+})
+
 // THESE ARE THE KICK AND BAN COMMANDS
 
 bot.on('message', message => {
