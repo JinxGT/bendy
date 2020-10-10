@@ -323,7 +323,7 @@ bot.on('message', async message => {
 		.setColor('#fb1309')
 		.setTitle('INVITE')
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
-		.setDescription(" [``[Click here]``](https://discord.com/oauth2/authorize?client_id=750547209002680431&scope=bot)")
+		.setDescription(" [``[Click here]``](https://discord.com/api/oauth2/authorize?client_id=750547209002680431&permissions=0&redirect_uri=https%3A%2F%2Fdiscord.gg%2FwstKjrX&scope=bot)")
 		.addField('Get premium', '``be!get-premium``', false)
 		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setTimestamp()
