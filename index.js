@@ -60,6 +60,7 @@ bot.on('message', async message => {
 		.setAuthor('Bendy', 'https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setDescription('To invite this bot to your server use the ``be!invite`` command!')
 		.addField("⏳ ping", `${Math.round(bot.ws.ping)}ms`, false)
+		.addField(":globe_with_meridians: Servers", `${bot.guilds.size} guilds`, false)
 		.setThumbnail('https://media.discordapp.net/attachments/750544950860447764/756916779791679599/bendy_regular.jpg?width=294&height=294')
 		.setTimestamp()
 		.setFooter('Wampus Development Group', 'https://media.discordapp.net/attachments/749691775202885645/750474651389526097/463d17316ea53baf574535c84b88c525.png?width=401&height=401');
